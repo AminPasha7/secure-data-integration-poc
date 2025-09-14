@@ -80,7 +80,3 @@ images/    # Diagrams & screenshots
 - Idempotency and retries are enabled across external side‑effects.
 
 ---
-
-## Troubleshooting
-- **Diagram not rendering**: Ensure the exact path and case match. The README uses `images/Architecture%20Diagram_%20Data%20Integration%20POC.png`. GitHub sometimes caches—refresh the page. The HTML fallback tag is included above.
-- **Prefer no spaces in file names**: Optionally rename to `images/architecture-diagram.png` and update both links accordingly.
