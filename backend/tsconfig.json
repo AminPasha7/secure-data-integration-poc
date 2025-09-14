@@ -1,0 +1,24 @@
+﻿{
+    "include":  [
+                    "src/**/*.ts",
+                    "encore.gen.ts"
+                ],
+    "exclude":  [
+                    "node_modules",
+                    "dist"
+                ],
+    "compilerOptions":  {
+                            "outDir":  "dist",
+                            "resolveJsonModule":  true,
+                            "moduleResolution":  "Node",
+                            "strict":  true,
+                            "target":  "ES2020",
+                            "esModuleInterop":  true,
+                            "skipLibCheck":  true,
+                            "module":  "CommonJS",
+                            "rootDir":  "src",
+                            "types":  [
+                                          "node"
+                                      ]
+                        }
+}
