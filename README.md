@@ -9,9 +9,6 @@ A production‑grade proof of concept for ingesting, validating, translating, an
 <!-- Markdown embed -->
 ![Architecture Diagram — Data Integration POC](images/Architecture%20Diagram_%20Data%20Integration%20POC.png)
 
-<!-- HTML fallback (GitHub supports this). If the Markdown line above doesn’t render, this one will. -->
-<img src="images/Architecture%20Diagram_%20Data%20Integration%20POC.png" alt="Architecture Diagram — Data Integration POC" />
-
 ### End‑to‑End Flow
 1. **Ingestion**: Files arrive via Admin UI uploads or REST/webhook. Metadata and blob pointers are persisted.
 2. **Validation & Normalization**: Content type/shape checks; payloads are normalized for parsing.
