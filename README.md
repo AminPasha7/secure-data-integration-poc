@@ -12,8 +12,6 @@ A production‑grade proof of concept for ingesting, validating, translating, an
 <!-- HTML fallback (GitHub supports this). If the Markdown line above doesn’t render, this one will. -->
 <img src="images/Architecture%20Diagram_%20Data%20Integration%20POC.png" alt="Architecture Diagram — Data Integration POC" />
 
-> The diagram file lives at `images/Architecture Diagram_ Data Integration POC.png`. Spaces are URL‑encoded as `%20` above.
-
 ### End‑to‑End Flow
 1. **Ingestion**: Files arrive via Admin UI uploads or REST/webhook. Metadata and blob pointers are persisted.
 2. **Validation & Normalization**: Content type/shape checks; payloads are normalized for parsing.
