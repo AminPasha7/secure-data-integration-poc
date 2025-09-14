@@ -1,0 +1,39 @@
+name: ci
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with: { version: 9 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Backend install
+        run: |
+          cd backend
+          pnpm install
+      - name: Typecheck backend
+        run: |
+          cd backend
+          pnpm build
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: pnpm/action-setup@v3
+        with: { version: 9 }
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - name: Frontend install
+        run: |
+          cd frontend
+          pnpm install
+      - name: Typecheck frontend
+        run: |
+          cd frontend
+          pnpm build

@@ -1,0 +1,14 @@
+node_modules
+.env
+.env.*
+.next
+dist
+coverage
+pnpm-lock.yaml
+*.log
+.DS_Store
+.encore
+.idea
+.vscode
+
+frontend/.env.local
